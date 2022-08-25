@@ -1,0 +1,92 @@
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid tomato;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.offerings {
+    margin-left: auto;
+    margin-right: auto;
+
+    height:1050px;
+    
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+    background-size: cover;
+    background-image: url(../images/fone-mobile@1x.png);
+
+    @media screen and (min-width: 480px) and (min-resolution: 192dpi),
+        screen and (min-width: 480px) and (min-resolution: 2dppx) {
+            height: 1050px;
+            max-width: 100%;
+    
+            background-image: url(../images/fone-mobile@2x.png);
+    }
+    
+        @media screen and (min-width: 768px) and (min-resolution: 96dpi),
+        screen and (min-width: 768px) and (min-resolution: 1dppx) {
+            height: 1140px;
+            max-width: 100%;
+
+            background-repeat: no-repeat;
+            background-position: top 0 center;
+            background-size: cover;
+    
+            background-image: url(../images/fone-tablet@1x.png);
+        }
+    
+        @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+        screen and (min-width: 768px) and (min-resolution: 2dppx) {
+            height: 1140px;
+            max-width: 100%;
+            
+            background-repeat: no-repeat;
+            background-position: top 0 center;
+            background-size: cover;
+    
+            background-image: url(../images/fone-tablet@2x.png);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            height: 856px;
+            width: 100%;
+            max-width: 1600px;
+            
+            background-repeat: no-repeat;
+            background-position: top 0 center;
+            background-size: cover;
+            
+            background-image: url(../images/fone-desktop@1x.png);
+        }
+    
+        @media screen and (min-width: 1200px) and (min-resolution: 192dpi),
+        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+            height: 856px;
+            width: 100%;
+            max-width: 1600px;
+        
+            background-repeat: no-repeat;
+            background-position: top 0 center;
+            background-size: cover;
+        
+            background-image: url(../images/fone-desktop@2x.png);
+        }
+}
