@@ -15,8 +15,8 @@
         padding-right: 32px;
     }
     
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -65,10 +65,9 @@
         background-image: url(../images/fone-tablet@2x.png);
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         height: 856px;
         width: 100%;
-        max-width: 1600px;
             
         background-repeat: no-repeat;
         background-position: top 0 center;
@@ -77,7 +76,7 @@
         background-image: url(../images/fone-desktop@1x.png);
     }
     
-    @media screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
         screen and (min-width: 1200px) and (min-resolution: 2dppx) {
         height: 856px;
         width: 100%;
@@ -109,7 +108,7 @@
     &__img-tablet {
         display: none;
     
-        @media screen and (min-width: 768px) and  (max-width: 1199px){
+        @media screen and (min-width: 768px) and  (max-width: 1279px){
             display: block;
             margin-left: auto;
             margin-right: auto;
@@ -119,15 +118,39 @@
     &__img-desktop {
         display: none;
     
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
             display: block;
         }
     }
 
-    &__link-icon {
+    &__icon-block {
         display: flex;
         align-items: center;
         justify-content: center;
+
+        width: 48px;
+        height: 48px;
+
+        border-radius: 50%;
+
+        background-color: #FFFFFF;
+    }
+
+    &__icon {
+        fill: #7EB101;
+    }
+
+    &__services {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link-icon {
         fill: #7EB101;
     }
 }
