@@ -41,52 +41,104 @@
             background-image: url(../images/fone-mobile@2x.png);
     }
     
-        @media screen and (min-width: 768px) and (min-resolution: 96dpi),
-        screen and (min-width: 768px) and (min-resolution: 1dppx) {
-            height: 1140px;
-            max-width: 100%;
+    @media screen and (min-width: 768px) and (min-resolution: 96dpi),
+    screen and (min-width: 768px) and (min-resolution: 1dppx) {
+        height: 1140px;
+        max-width: 100%;
 
-            background-repeat: no-repeat;
-            background-position: top 0 center;
-            background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top 0 center;
+        background-size: cover;
     
-            background-image: url(../images/fone-tablet@1x.png);
-        }
+        background-image: url(../images/fone-tablet@1x.png);
+    }
     
-        @media screen and (min-width: 768px) and (min-resolution: 192dpi),
-        screen and (min-width: 768px) and (min-resolution: 2dppx) {
-            height: 1140px;
-            max-width: 100%;
+    @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+        height: 1140px;
+        max-width: 100%;
             
-            background-repeat: no-repeat;
-            background-position: top 0 center;
-            background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top 0 center;
+        background-size: cover;
     
-            background-image: url(../images/fone-tablet@2x.png);
+        background-image: url(../images/fone-tablet@2x.png);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        height: 856px;
+        width: 100%;
+        max-width: 1600px;
+            
+        background-repeat: no-repeat;
+        background-position: top 0 center;
+        background-size: cover;
+            
+        background-image: url(../images/fone-desktop@1x.png);
+    }
+    
+    @media screen and (min-width: 1200px) and (min-resolution: 192dpi),
+        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+        height: 856px;
+        width: 100%;
+        max-width: 1600px;
+        
+        background-repeat: no-repeat;
+        background-position: top 0 center;
+        background-size: cover;
+        
+        background-image: url(../images/fone-desktop@2x.png);
         }
+
+    &__img-mobile {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        cursor: pointer;
+        padding: 7px 0;
+    }
+    
+    &__img-tablet {
+        display: none;
+    
+        @media screen and (min-width: 768px) and  (max-width: 1199px){
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__img-desktop {
+        display: none;
     
         @media screen and (min-width: 1200px) {
-            height: 856px;
-            width: 100%;
-            max-width: 1600px;
-            
-            background-repeat: no-repeat;
-            background-position: top 0 center;
-            background-size: cover;
-            
-            background-image: url(../images/fone-desktop@1x.png);
+            display: block;
         }
+    }
+
+    &__link-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #7EB101;
+    }
+}
+
+.btn {
+    // width: 106px;
+    // height: 40px;
+    padding: 10px 22px;
+        
+    background: #FFFFFF;
     
-        @media screen and (min-width: 1200px) and (min-resolution: 192dpi),
-        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-            height: 856px;
-            width: 100%;
-            max-width: 1600px;
-        
-            background-repeat: no-repeat;
-            background-position: top 0 center;
-            background-size: cover;
-        
-            background-image: url(../images/fone-desktop@2x.png);
-        }
+    border: 2px solid #7EB101;
+    border-radius: 30px;
 }
