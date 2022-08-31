@@ -1,167 +1,275 @@
-.conteiner {
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid tomato;
-
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
-    
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
 .offerings {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    height:1050px;
-    
+  padding-top: 46px;
+  padding-bottom: 55px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+    margin-top: -108px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 177px;
+    padding-bottom: 75px;
+
+    margin-top: -161px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: top 0 center;
+  background-size: cover;
+  background-image: url(../images/offerings/fone-mobile@1x.png);
+
+  @media screen and (min-width: 480px) and (min-resolution: 192dpi),
+    screen and (min-width: 480px) and (min-resolution: 2dppx) {
+    height: 1050px;
+    max-width: 100%;
+
+    background-image: url(../images/offerings/fone-mobile@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 1140px;
+    max-width: 100%;
+
     background-repeat: no-repeat;
     background-position: top 0 center;
     background-size: cover;
-    background-image: url(../images/fone-mobile@1x.png);
 
-    @media screen and (min-width: 480px) and (min-resolution: 192dpi),
-        screen and (min-width: 480px) and (min-resolution: 2dppx) {
-            height: 1050px;
-            max-width: 100%;
-    
-            background-image: url(../images/fone-mobile@2x.png);
-    }
-    
-    @media screen and (min-width: 768px) and (min-resolution: 96dpi),
-    screen and (min-width: 768px) and (min-resolution: 1dppx) {
-        height: 1140px;
-        max-width: 100%;
+    background-image: url(../images/offerings/fone-tablet@1x.png);
+  }
 
-        background-repeat: no-repeat;
-        background-position: top 0 center;
-        background-size: cover;
-    
-        background-image: url(../images/fone-tablet@1x.png);
-    }
-    
-    @media screen and (min-width: 768px) and (min-resolution: 192dpi),
+  @media screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
-        height: 1140px;
-        max-width: 100%;
-            
-        background-repeat: no-repeat;
-        background-position: top 0 center;
-        background-size: cover;
-    
-        background-image: url(../images/fone-tablet@2x.png);
-    }
-    
+    height: 1140px;
+    max-width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+    background-size: cover;
+
+    background-image: url(../images/offerings/fone-tablet@2x.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 856px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+    background-size: cover;
+
+    background-image: url(../images/offerings/fone-desktop@1x.png);
+  }
+
+  @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    height: 856px;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-position: top 0 center;
+    background-size: cover;
+
+    background-image: url(../images/offerings/fone-desktop@2x.png);
+  }
+
+  &__position {
     @media screen and (min-width: 1280px) {
-        height: 856px;
-        width: 100%;
-            
-        background-repeat: no-repeat;
-        background-position: top 0 center;
-        background-size: cover;
-            
-        background-image: url(../images/fone-desktop@1x.png);
+      display: flex;
+      gap: 90px;
+      align-items: center;
     }
-    
-    @media screen and (min-width: 1280px) and (min-resolution: 192dpi),
-        screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-        height: 856px;
-        width: 100%;
-        max-width: 1600px;
-        
-        background-repeat: no-repeat;
-        background-position: top 0 center;
-        background-size: cover;
-        
-        background-image: url(../images/fone-desktop@2x.png);
-        }
+  }
 
-    &__img-mobile {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-        @media screen and (min-width: 768px) {
-            display: none;
-        }
+  &__img {
+    @media screen and (max-width: 1279px) {
+      margin-bottom: 60px;
+      text-align: center;
     }
+  }
 
-    &__link {
-        text-decoration: none;
-        cursor: pointer;
-        padding: 7px 0;
-    }
-    
-    &__img-tablet {
-        display: none;
-    
-        @media screen and (min-width: 768px) and  (max-width: 1279px){
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    }
+  &__img-desktop {
+    display: inline-block;
+    max-width: 550px;
+    margin: 0;
 
-    &__img-desktop {
-        display: none;
-    
-        @media screen and (min-width: 1280px) {
-            display: block;
-        }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    // max-width: 280px;
+    margin-bottom: 28px;
+
+    text-align: left;
+    color: var(--main-txt-cl);
+
+    @media screen and (min-width: 768px) {
+      max-width: 526px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 116px;
+      margin-bottom: 40px;
     }
 
-    &__icon-block {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    @media screen and (min-width: 1280px) {
+      gap: 67px;
+      margin-bottom: 32px;
+    }
+  }
 
-        width: 48px;
-        height: 48px;
+  &__bigdesk {
+    // max-width: 272px;
+    margin-bottom: 28px;
 
-        border-radius: 50%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--main-txt-cl);
 
-        background-color: #FFFFFF;
+    @media screen and (min-width: 768px) {
+      max-width: 500px;
+      margin-bottom: 40px;
+
+      font-size: 16px;
+      line-height: calc(19 / 16);
     }
 
-    &__icon {
-        fill: #7EB101;
+    @media screen and (min-width: 1280px) {
+      line-height: calc(24 / 16);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    color: var(--main-txt-cl);
+  }
+
+  &__desk {
+    // max-width: 252px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--main-txt-cl);
+
+    @media screen and (min-width: 1280px) {
+      line-height: calc(21 / 14);
+    }
+  }
+
+  &__link {
+    padding: 7px 0;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+    color: #000000;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
 
-    &__services {
-        display: flex;
-        align-items: center;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: #597d00;
     }
 
-    &__link {
-        display: flex;
-        align-items: center;
+    &:hover .offerings__link-icon,
+    &:focus .offerings__link-icon {
+      fill: #597d00;
     }
+  }
 
-    &__link-icon {
-        fill: #7EB101;
+  &__link-icon {
+    fill: #000000;
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__img-tablet {
+    display: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      display: block;
     }
+  }
+
+  &__icon-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 8px;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__icon {
+    fill: var(--dark-green);
+  }
+
+  &__services {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 .btn {
-    // width: 106px;
-    // height: 40px;
-    padding: 10px 22px;
-        
-    background: #FFFFFF;
-    
-    border: 2px solid #7EB101;
-    border-radius: 30px;
+  min-width: 106px;
+  padding: 10px 22px;
+
+  background: #ffffff;
+
+  border: 2px solid var(--dark-green);
+  border-radius: 30px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: calc(20 / 13);
+
+  cursor: pointer;
+
+  transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: #597d00;
+  }
 }

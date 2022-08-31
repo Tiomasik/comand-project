@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Tiomasik.github.io/comand-project",
+  "homepage": "https://SychevskaAlyona.github.io/project-35",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /comand-project/"
+    "build": "parcel build src/*.html --public-url /project-35/"
   },
   "repository": {
     "type": "git",

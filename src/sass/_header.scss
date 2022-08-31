@@ -1,4 +1,142 @@
-.header__list{
-    background-color: green;
-    color: yellow;
+.header {
+  background-color: #fefefe;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 191px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 735px;
+  }
+}
+.nav-list {
+  display: flex;
+  gap: 28px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.nav-list__link {
+  display: block;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: #000000;
+  padding: 28 0 28 0;
+  overflow: hidden;
+
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-list__link:hover,
+.nav-list__link:focus {
+  text-decoration: underline;
+  color: #bbf330;
+}
+
+.button-header {
+  display: inline-block;
+  padding: 5px 16px;
+  margin-left: 28px;
+  min-width: 100px;
+  background-color: #bbf330;
+  border-radius: 30px;
+  border: none;
+  font-size: 14px;
+  line-height: 150%;
+  cursor: pointer;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-header:hover,
+.button-header:focus {
+  background-color: #b5ff00;
+}
+
+// mobile menu
+.button-menu {
+  padding: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: #fff;
+  margin-left: auto;
+  cursor: pointer;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-menu__icon {
+  fill: var(--dark-green);
+
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-menu__icon:hover,
+.button-menu__icon:focus {
+  fill: var(--accent-yellow);
+}
+
+.mobile-container {
+  opacity: 0;
+  visibility: hidden;
+
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 100;
+
+  background: #fefefe;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+  border-radius: 30px 0px 30px 30px;
+
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-list {
+  padding: 0;
+  margin: 0;
+}
+.mobile-list__item {
+  display: flex;
+}
+.mobile-list__link {
+  width: 100%;
+  padding: 16 70 16 16;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  color: #000000;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-list__link:hover,
+.mobile-list__link:focus {
+  background-color: #bbf330;
 }

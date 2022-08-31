@@ -1,0 +1,59 @@
+body {
+  font-family: var(--main-font);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  position: relative;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    padding: 0 16px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 100px 0;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+// Варіант анімації ховеру/фокусу: transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
